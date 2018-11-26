@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>SUNTAR</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/suntar.css">
+  <link rel="stylesheet" href="css/suntar-mobile.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="title">
+      <div id="one">
+        SUNTAR
+      </div>
+      <div id="spinner">
+        <img src="svg/spinner.svg" alt="">
+      </div>
+      <div id="three">
+        909
+      </div>
+    </div>
+
+    <div id="infoBox">
+      <div id="info">
+        <div id="left"><span style="font-weight: 700">Suntar 909</span> is a typeface inspired by found material discovered at an estate sale in El Cerrito, CA on September 23, 2018. A line of Super 8mm film viewers and editors, Suntar products were made in Japan by
+          Sansei Koki circa 1970s. The graphic design accompanying these products as logo and packaging is absolutely incredible; it’s so good I designed a typeface based on the original logotype. This typeface might already exist, but I wanted to define
+          a new typeface that took into consideration the “spinning” circle icon and the relationship between the sans-serif numbers “909”.
+        </div>
+        <div id="right">
+          <span style="font-weight: 700; text-decoration: underline;">Suntar 909</span> <br> • 1 weight/style <br> • Lower case = upper case <br> • Two special characters <br> • 38 Glyphs <br> • Literally nothing else
+        </div>
+      </div>
+    </div>
+
+    <div id="letter-specimen">
+      <div class="grid-container-left">
+        <div class="grid-item" v-for="letter in letters.slice(0,20)" v-on:mouseover="showLetter(letter.letter)">
+          {{ letter.letter }}
+        </div>
+      </div>
+      <div id="main-letter">
+        {{ mainLetter }}
+      </div>
+      <div class="grid-container-right">
+        <div class="grid-item" v-for="letter in letters.slice(20,38)" v-on:mouseover="showLetter(letter.letter)">
+          {{ letter.letter }}
+        </div>
+      </div>
+    </div>
+
+    <div id="input-box">
+      <div id="slider">
+        <div id = "fontSize">
+          font-size
+        </div>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+        <div id="font-value">
+          12px
+        </div>
+      </div>
+      <!-- <input type="textarea" name="" value=""> -->
+      <div id="type-test" contenteditable="true">
+        type something
+      </div>
+    </div>
+
+  </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+<script type='text/javascript' src="js/suntar.js"></script>
+
+</html>
