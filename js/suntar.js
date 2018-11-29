@@ -1,6 +1,10 @@
 new Vue({
   el: "#container",
   data: {
+    value: 150,
+    dynamicFontSize: {
+      fontSize: '150px'
+    },
     letters: [{
         letter: 'a'
       },
@@ -133,6 +137,9 @@ new Vue({
 
   },
   watch: {
-
+    'value': function(val) {
+      console.log(val);
+      this.dynamicFontSize.fontSize = val + 'px';
+    }
   }
 })

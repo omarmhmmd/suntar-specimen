@@ -1,5 +1,5 @@
 :root {
-  --main-bg-color: #ffffff;
+  --main-bg-color: #DAA626;
 }
 
 @font-face {
@@ -41,6 +41,10 @@ html {
   width: 6.5vw;
 }
 
+#bigSpinner {
+  /* transform: rotate(45deg); */
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);
@@ -76,7 +80,7 @@ html {
 }
 
 #letter-specimen {
-  font-family: helvetica;
+  font-family: suntar;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -118,7 +122,7 @@ html {
 
 .grid-item:hover {
   color: var(--main-bg-color);
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: black;
   cursor: pointer;
 }
@@ -143,7 +147,7 @@ html {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 #slider {
@@ -157,7 +161,7 @@ html {
 }
 
 #myRange {
-  margin: 2vw;
+  margin: 1.625vw;
   width: 25vw;
 }
 
@@ -180,19 +184,34 @@ html {
   cursor: pointer;
 }
 
-#type-test {
+#typeTest {
   margin-top: 2vw;
+  padding-bottom: 1vw;
+  /* margin-top: 2vw;
   margin-bottom: 2vw;
   margin-left: 3vw;
   margin-right: 3vw;
   display: flex;
   justify-content: center;
-  width: 95%;
+  width: 95%; */
   font-family: suntar;
   text-transform: uppercase;
   font-weight: bold;
   outline: none;
   border: none;
-  font-size: 200px;
+  /* font-size: 100px; */
   text-align: center;
+  /* color:white;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: black; */
+  border-bottom: 1px solid black;
+}
+
+#special-char {
+  background-color: var(--main-bg-color);
+  width: 100vw;
+}
+
+#special-char svg {
+  margin: 50px 100px 50px 100px;
 }
