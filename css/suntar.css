@@ -219,7 +219,6 @@ html {
 
 #photoSlide {
   width: 100vw;
-
   /* background-color: red; */
 }
 
@@ -230,7 +229,7 @@ html {
 #marqueeImg {
   display: flex;
   align-items: center;
-
+  border-bottom: 1px solid black;
 }
 
 #marqueeImg img:hover  {
@@ -260,4 +259,23 @@ html {
   /* mix-blend-mode: screen; */
   filter: grayscale(100%) contrast(200%);
   opacity: 1;
+}
+
+#total-spec {
+  padding-top: 20px;
+  width: 100vw;
+  font-size: 8vw;
+  display: flex;
+  justify-content: space-around;
+  font-family: suntar;
+  flex-direction: column;
+  align-items: center;
+  height: 50vw;
+}
+
+#abc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
