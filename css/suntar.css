@@ -12,7 +12,7 @@ html {
 }
 
 #container {
-
+  overflow-x: hidden;
 }
 
 #title {
@@ -180,7 +180,7 @@ html {
   height: 1.125vw;
   border-radius: 50%;
   border: 1px solid black;
-  background: var(--main-bg-color);;
+  background: var(--main-bg-color);
   cursor: pointer;
 }
 
@@ -201,17 +201,63 @@ html {
   border: none;
   /* font-size: 100px; */
   text-align: center;
+  border-bottom: 1px solid black;
   /* color:white;
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: black; */
-  border-bottom: 1px solid black;
 }
 
 #special-char {
   background-color: var(--main-bg-color);
   width: 100vw;
+  border-bottom: 1px solid black;
 }
 
 #special-char svg {
   margin: 50px 100px 50px 100px;
+}
+
+#photoSlide {
+  width: 100vw;
+
+  /* background-color: red; */
+}
+
+#photoSlide img {
+  width: 30vw;
+}
+
+#marqueeImg {
+  display: flex;
+  align-items: center;
+
+}
+
+#marqueeImg img:hover  {
+
+}
+
+.hoverLay {
+    margin: 20px;
+  background: var(--main-bg-color);
+  /* background: #000000; */
+}
+
+.hoverLay img:hover {
+  mix-blend-mode: none;
+  -webkit-filter: none;
+  filter: none;
+}
+
+
+.hoverLay:hover {
+  background: none;
+}
+
+.hoverLay img {
+  display:block;
+  mix-blend-mode: multiply;
+  /* mix-blend-mode: screen; */
+  filter: grayscale(100%) contrast(200%);
+  opacity: 1;
 }
