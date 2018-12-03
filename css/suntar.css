@@ -1,6 +1,6 @@
 :root {
   --main-bg-color: #ffffff;
-  --main-type-color: #0000ff;
+  --main-type-color: #ff0000;
 }
 
 @font-face {
@@ -11,6 +11,7 @@
 html {
   background-color: var(--main-bg-color);
   color: var(--main-type-color);
+  font-family: suntar;
 }
 
 #container {
@@ -20,7 +21,6 @@ html {
 #title {
   /* background-color: green; */
   font-size: 14vw;
-  font-family: suntar;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -87,7 +87,6 @@ html {
 }
 
 #letter-specimen {
-  font-family: suntar;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -201,7 +200,6 @@ html {
   display: flex;
   justify-content: center;
   width: 95%; */
-  font-family: suntar;
   text-transform: uppercase;
   font-weight: bold;
   outline: none;
@@ -295,15 +293,16 @@ html {
 }
 
 #total-spec {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   width: 100vw;
+  height: 100vh;
   font-size: 8vw;
   display: flex;
   justify-content: space-around;
-  font-family: suntar;
   flex-direction: column;
   align-items: center;
-  height: 50vw;
+  /* height: 50vw; */
+  border-bottom: 1px solid var(--main-type-color);
 }
 
 #abc {
