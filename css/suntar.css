@@ -1,5 +1,6 @@
 :root {
-  --main-bg-color: #DAA626;
+  --main-bg-color: #ffffff;
+  --main-type-color: #0000ff;
 }
 
 @font-face {
@@ -9,6 +10,7 @@
 
 html {
   background-color: var(--main-bg-color);
+  color: var(--main-type-color);
 }
 
 #container {
@@ -25,7 +27,7 @@ html {
   align-items: center;
   padding-top: 4.75vw;
   padding-bottom: 1.25vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
   line-height: 0.5vw;
 }
 
@@ -39,6 +41,11 @@ html {
 
 #spinner img {
   width: 6.5vw;
+}
+
+#spinner svg {
+  width: 6.5vw;
+  fill: var(--main-type-color);
 }
 
 #bigSpinner {
@@ -55,7 +62,7 @@ html {
 }
 
 #infoBox {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
   display: flex;
   justify-content: center;
   padding: 3vw 0 3vw 0;
@@ -66,7 +73,7 @@ html {
   font-family: 'Source Code Pro';
   font-size: 1vw;
   font-weight: 300;
-  width: 93vw;
+  width: 92vw;
   display: flex;
   justify-content: space-between;
 }
@@ -85,7 +92,7 @@ html {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
   background-color: var(--main-bg-color);
   align-items: center;
 }
@@ -96,8 +103,8 @@ html {
   grid-template-columns: auto auto;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
-  background-color: black;
-  border-right: 1px solid black;
+  background-color: var(--main-type-color);
+  border-right: 1px solid var(--main-type-color);
 }
 
 .grid-container-right {
@@ -106,8 +113,8 @@ html {
   grid-template-columns: auto auto;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
-  background-color: black;
-  border-left: 1px solid black;
+  background-color: var(--main-type-color);
+  border-left: 1px solid var(--main-type-color);
 }
 
 .grid-item {
@@ -122,8 +129,8 @@ html {
 
 .grid-item:hover {
   color: var(--main-bg-color);
-  -webkit-text-stroke-width: 0.25px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-color: var(--main-type-color);
   cursor: pointer;
 }
 
@@ -168,7 +175,7 @@ html {
 #myRange {
   -webkit-appearance: none;
   background: var(--main-bg-color);
-  border: 0.25px solid black;
+  border: 0.25px solid var(--main-type-color);
   height: 0vh;
   outline: none;
 }
@@ -179,7 +186,7 @@ html {
   width: 1.125vw;
   height: 1.125vw;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid var(--main-type-color);
   background: var(--main-bg-color);
   cursor: pointer;
 }
@@ -201,20 +208,46 @@ html {
   border: none;
   /* font-size: 100px; */
   text-align: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
   /* color:white;
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: black; */
 }
 
 #special-char {
+  display: flex;
+  justify-content: center;
   background-color: var(--main-bg-color);
-  width: 100vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
 }
 
-#special-char svg {
-  margin: 50px 100px 50px 100px;
+#svgSpecial-char {
+  width: 85vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+#svgSpecial-char svg {
+  padding: 30px 25px 30px 25px;
+  /* fill: var(--main-type-color); */
+}
+
+.spinners {
+  fill: var(--main-type-color);
+  animation-name: spin;
+  animation-duration: 6000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.svg-stroke {
+  stroke:  var(--main-type-color);
+}
+
+.svg-text {
+  fill: var(--main-type-color);
 }
 
 #photoSlide {
@@ -229,7 +262,7 @@ html {
 #marqueeImg {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--main-type-color);
 }
 
 #marqueeImg img:hover  {
@@ -237,9 +270,9 @@ html {
 }
 
 .hoverLay {
-    margin: 20px;
-  background: var(--main-bg-color);
-  /* background: #000000; */
+  margin: 20px;
+  /* background: var(--main-bg-color); */
+  background: var(--main-type-color);
 }
 
 .hoverLay img:hover {
@@ -255,8 +288,8 @@ html {
 
 .hoverLay img {
   display:block;
-  mix-blend-mode: multiply;
-  /* mix-blend-mode: screen; */
+  /* mix-blend-mode: multiply; */
+  mix-blend-mode: screen;
   filter: grayscale(100%) contrast(200%);
   opacity: 1;
 }
@@ -278,4 +311,21 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+}
+
+#abc-spin {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#abc-spin div {
+  width: 16vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#abc-spin div svg {
+  padding: 0 20px 0 20px;
 }

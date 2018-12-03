@@ -126,7 +126,7 @@ new Vue({
   },
   methods: {
     showLetter: function(letter) {
-      console.log(letter);
+      // console.log(letter);
       this.mainLetter = letter;
     }
   },
@@ -138,7 +138,7 @@ new Vue({
   },
   watch: {
     'value': function(val) {
-      console.log(val);
+      // console.log(val);
       this.dynamicFontSize.fontSize = val + 'px';
     }
   }
