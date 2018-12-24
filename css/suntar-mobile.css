@@ -1,4 +1,95 @@
 @media (max-width: 576px) {
+  #info {
+    line-height: 3.5vw;
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vw;
+  }
 
+  #left {
+    width: 90vw;
+  }
+
+  #right {
+    width: 90vw;
+  }
+
+  .grid-item {
+    padding: 2.75vw;
+    font-size: 2.625vw;
+  }
+
+  #main-letter {
+    font-size: 50vw;
+  }
+
+  .grid-item:hover {
+    -webkit-text-stroke-width: 0.75px;
+  }
+
+  #input-box {
+    display: none;
+  }
+
+  #slider {
+    padding-top: 3vh;
+  }
+
+  #myRange {
+    margin: 5.625vw;
+    width: 75vw;
+  }
+
+  #myRange {
+    border: 1.25px solid var(--main-type-color);
+
+  }
+
+  #myRange::-webkit-slider-thumb {
+    width: 5.125vw;
+    height: 5.125vw;
+  }
+
+  #typeTest {
+    display: none;
+  }
+
+  #typeTest-mobile {
+    visibility: visible;
+    margin-top: 2vw;
+    padding-bottom: 1vw;
+    font-size: 30vw;
+    text-align: center;
+    border-bottom: 1px solid var(--main-type-color);
+  }
+
+  #special-char {
+    display: none;
+  }
+
+  #photoSlide img {
+    width: 75vw;
+  }
+
+  #total-spec {
+    width: 100vw;
+    height: 50vh;
+    font-size: 10vw;
+  }
+
+  #abc {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+
+  .spinners {
+    width: 35vw;
+    padding: 0vw;
+  }
 
 }

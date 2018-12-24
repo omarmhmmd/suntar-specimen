@@ -1,9 +1,9 @@
 new Vue({
   el: "#container",
   data: {
-    value: 150,
+    value: 170,
     dynamicFontSize: {
-      fontSize: '150px'
+      fontSize: '170px'
     },
     letters: [{
         letter: 'a'

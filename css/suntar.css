@@ -1,11 +1,11 @@
 :root {
   --main-bg-color: #ffffff;
-  --main-type-color: #ff0000;
+  --main-type-color: #3b00ff;
 }
 
 @font-face {
   font-family: suntar;
-  src: url("../font/suntar001.otf") format("opentype");
+  src: url("../font/suntar003.otf") format("opentype");
 }
 
 html {
@@ -25,14 +25,13 @@ html {
   justify-content: space-around;
   align-content: center;
   align-items: center;
-  padding-top: 4.75vw;
-  padding-bottom: 1.25vw;
+  padding: 5vw 0 5vw 0;
   border-bottom: 1px solid var(--main-type-color);
   line-height: 0.5vw;
 }
 
 #spinner {
-  margin-bottom: 3vw;
+  margin-bottom: 0vw;
   animation-name: spin;
   animation-duration: 6000ms;
   animation-iteration-count: infinite;
@@ -87,7 +86,6 @@ html {
 }
 
 #letter-specimen {
-  font-weight: bold;
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -128,7 +126,7 @@ html {
 
 .grid-item:hover {
   color: var(--main-bg-color);
-  -webkit-text-stroke-width: 0.01px;
+  -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--main-type-color);
   cursor: pointer;
 }
@@ -145,7 +143,7 @@ html {
 #main-letter {
   font-size: 50vw;
   display: flex;
-  background-color: var(--main-bg-color);
+  color: var(--main-type-color);
 }
 
 #input-box {
@@ -201,7 +199,6 @@ html {
   justify-content: center;
   width: 95%; */
   text-transform: uppercase;
-  font-weight: bold;
   outline: none;
   border: none;
   /* font-size: 100px; */
@@ -210,6 +207,10 @@ html {
   /* color:white;
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: black; */
+}
+
+#typeTest-mobile {
+  visibility:hidden;
 }
 
 #special-char {
@@ -296,11 +297,12 @@ html {
   /* padding-top: 20px; */
   width: 100vw;
   height: 100vh;
-  font-size: 8vw;
+  font-size: 10vw;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  align-content: center;
   /* height: 50vw; */
   border-bottom: 1px solid var(--main-type-color);
 }
@@ -312,19 +314,18 @@ html {
   align-items: center;
 }
 
-#abc-spin {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+#abc-num {
+  text-decoration: none;
 }
 
-#abc-spin div {
-  width: 16vw;
-  display: flex;
+.svg-spinners {
   align-items: center;
+  align-content: center;
+  display: flex;
   justify-content: space-between;
 }
 
-#abc-spin div svg {
-  padding: 0 20px 0 20px;
+.spinners {
+  width: 10vw;
+  padding: 2vw;
 }
