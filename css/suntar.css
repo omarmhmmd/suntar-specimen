@@ -1,11 +1,12 @@
 :root {
   --main-bg-color: #ffffff;
-  --main-type-color: #3b00ff;
+  --main-type-color: #000000;
 }
 
 @font-face {
   font-family: suntar;
-  src: url("../font/suntar003.otf") format("opentype");
+
+  src: url("../font/suntar005.otf") format("opentype");
 }
 
 html {
@@ -71,7 +72,7 @@ html {
   line-height: 1.25vw;
   font-family: 'Source Code Pro';
   font-size: 1vw;
-  font-weight: 300;
+  /* font-weight: 300; */
   width: 92vw;
   display: flex;
   justify-content: space-between;
@@ -161,7 +162,7 @@ html {
   flex-direction: column;
   font-family: 'Source Code Pro';
   font-weight: 300;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 #myRange {
@@ -172,7 +173,7 @@ html {
 #myRange {
   -webkit-appearance: none;
   background: var(--main-bg-color);
-  border: 0.25px solid var(--main-type-color);
+  border: 0.575px solid var(--main-type-color);
   height: 0vh;
   outline: none;
 }
@@ -325,7 +326,11 @@ html {
   justify-content: space-between;
 }
 
+#abc-spin div svg {
+  padding: 0 20px 0 20px;
+}
+/*
 .spinners {
   width: 10vw;
   padding: 2vw;
-}
+} */

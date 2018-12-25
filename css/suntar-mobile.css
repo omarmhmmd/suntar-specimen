@@ -92,4 +92,8 @@
     padding: 0vw;
   }
 
+  #abc-spin div svg {
+    padding: 0 0px 0 0px;
+  }
+
 }
